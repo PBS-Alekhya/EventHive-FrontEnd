@@ -1,0 +1,135 @@
+
+.create-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  font-family: 'Inter', sans-serif;
+  padding: 20px;
+}
+
+.create-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 100%;
+  max-width: 600px; 
+  color: white;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.form-subtitle {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* Form Layout */
+.form-group {
+  margin-bottom: 20px;
+  
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #e2e8f0;
+  
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Inputs & Textareas */
+.form-input, 
+.form-textarea, 
+.form-select {
+  width: 100%;
+  padding: 12px 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+.form-select option {
+  background-color: white;
+  color: black;
+}
+
+.form-input:focus, 
+.form-textarea:focus, 
+.form-select:focus {
+  border-color: #10b981; 
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Side-by-Side inputs */
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.btn-submit {
+  flex: 2;
+  padding: 12px;
+  background: linear-gradient(90deg, #10b981, #059669);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.btn-cancel {
+  flex: 1;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #cbd5e1;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-cancel:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
